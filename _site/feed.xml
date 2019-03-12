@@ -1,21 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-10T20:29:54+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Kiwifruit</title><link href="http://localhost:4000/2018/08/22/kiwifruit.html" rel="alternate" type="text/html" title="Kiwifruit" /><published>2018-08-22T00:00:00+08:00</published><updated>2018-08-22T00:00:00+08:00</updated><id>http://localhost:4000/2018/08/22/kiwifruit</id><content type="html" xml:base="http://localhost:4000/2018/08/22/kiwifruit.html">&lt;p&gt;Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-13T03:44:21+08:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Opencv Puttext Function</title><link href="http://localhost:4000/2017/07/12/OpenCV-putText-Function.html" rel="alternate" type="text/html" title="Opencv Puttext Function" /><published>2017-07-12T00:00:00+08:00</published><updated>2017-07-12T00:00:00+08:00</updated><id>http://localhost:4000/2017/07/12/OpenCV-putText-Function</id><content type="html" xml:base="http://localhost:4000/2017/07/12/OpenCV-putText-Function.html">&lt;p&gt;       在Python中，putText函数常用于在图像上绘图。其原型为：&lt;/p&gt;
 
-&lt;p&gt;The most common cultivar group of kiwifruit is oval, about the size of a large
-hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
-diameter). It has a fibrous, dull greenish-brown skin and bright green or
-golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
-texture, with a sweet and unique flavor.&lt;/p&gt;</content><author><name>ted</name></author><summary type="html">Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible berry of several species of woody vines in the genus Actinidia.</summary></entry><entry><title type="html">Apples</title><link href="http://localhost:4000/2018/08/21/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2018-08-21T00:00:00+08:00</published><updated>2018-08-21T00:00:00+08:00</updated><id>http://localhost:4000/2018/08/21/apples</id><content type="html" xml:base="http://localhost:4000/2018/08/21/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cv2.putText(img, text, org, fontFace, fontScale, color)
 
-&lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
-the genus Malus. The tree originated in Central Asia, where its wild ancestor,
-Malus sieversii, is still found today. Apples have been grown for thousands of
-years in Asia and Europe, and were brought to North America by European
-colonists.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">An apple is a sweet, edible fruit produced by an apple tree.</summary></entry><entry><title type="html">Bananas</title><link href="http://localhost:4000/2018/08/20/bananas.html" rel="alternate" type="text/html" title="Bananas" /><published>2018-08-20T00:00:00+08:00</published><updated>2018-08-20T00:00:00+08:00</updated><id>http://localhost:4000/2018/08/20/bananas</id><content type="html" xml:base="http://localhost:4000/2018/08/20/bananas.html">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
+#img – 想要打印上文字的图像
+#text – 想要打印的文字
+#org – 文字的左下角坐标
+#fontFace – 字体，可选的有：FONT_HERSHEY_SIMPLEX, 
+#		FONT_HERSHEY_PLAIN, FONT_HERSHEY_DUPLEX, 
+#		FONT_HERSHEY_COMPLEX, FONT_HERSHEY_TRIPLEX, 
+#		以及 FONT_HERSHEY_SCRIPT_COMPLEX, 其中任意一种字体
+#		都可加上 FONT_ITALIC 使其变为斜体
+#fontScale – 字号
+#color – 颜色
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</summary></entry></feed>
+&lt;p&gt;       下面是代码应用，具体代码将在文章最后展示。
+       用摄像头获取图像，并在图像上打印出 “Hello World！”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170629175851485?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;puText&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图一：在图片上打印 “Hello World！”&lt;/p&gt;
+
+&lt;p&gt;Python代码：&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+&lt;h1 id=&quot;author-junkun-di&quot;&gt;Author Junkun Di&lt;/h1&gt;
+&lt;h1 id=&quot;create-at-2962017&quot;&gt;Create at: 29/6/2017&lt;/h1&gt;
+&lt;h1 id=&quot;description-get-an-image-by-using-the-webcamera-and-put-text-hello-world-in-the-image&quot;&gt;Description: Get an image by using the webcamera and put text “Hello World” in the image&lt;/h1&gt;
+
+&lt;p&gt;import cv2&lt;/p&gt;
+
+&lt;p&gt;cap = cv2.VideoCapture(0)
+while(cap.isOpened()):
+    # read image
+    ret, img = cap.read()
+    # Display the text
+    cv2.putText(img, “Hello World!”, (50, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, 1)
+    # show appropriate images in windows
+    cv2.imshow(‘putText’, img)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;k = cv2.waitKey(10)
+if k == 27:
+    break
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">       在Python中，putText函数常用于在图像上绘图。其原型为：</summary></entry><entry><title type="html">Mysql创建用户</title><link href="http://localhost:4000/2017/06/30/MySql%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7.html" rel="alternate" type="text/html" title="Mysql创建用户" /><published>2017-06-30T00:00:00+08:00</published><updated>2017-06-30T00:00:00+08:00</updated><id>http://localhost:4000/2017/06/30/MySql%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7</id><content type="html" xml:base="http://localhost:4000/2017/06/30/MySql%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7.html">&lt;p&gt;　　本文将创建三种不同的用户，并且以三种不同的方式进行连接：
+　　&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;从本地机器连接&lt;/li&gt;
+  &lt;li&gt;从IP地址在192.168.0.0 ~ 192.168.0.255范围内的任何机器连接&lt;/li&gt;
+  &lt;li&gt;从wiley.com域中的任何机器连接&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;　　我们通过使用grant命令来创建用户并赋予权限。先以root用户身份登陆MySQL，然后执行以下命令：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#为di创建一个本地登陆
+mysql&amp;gt; GRANT ALL ON *.* TO di@localhost IDENTIFIED BY 'password';
+#创建一个来自C类子网192.168.0的登录。用单引号来保护IP范围，并使用掩码255.255.255.0来确定允许的IP地址范围
+mysql&amp;gt; GRANT ALL ON *.* TO di@'192.168.0.0/255.255.255.0' IDENTIFIED BY 'password';
+#创建一个登陆，让di能从wiley.com域中的任何机器登录
+mysql&amp;gt; GRANT ALL ON *.* TO di@'%.wiley.com' IDENTIFIED BY 'password';
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;　　然后可以查看user表来核对：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql&amp;gt; SELECT user, host, authentication_string FROM mysql.user;
++---------------------------+------------------+-------------------------------------------+
+| host                      | user             | authentication_string                     |
++---------------------------+------------------+-------------------------------------------+
+| localhost                 | root             |                                           |
+| localhost                 | mysql.sys        | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE |
+| localhost                 | debian-sys-maint | *9E7189A8E3D1148B5ABE10E73607099C4FAFBB2E |
+| localhost                 | di               | *0CAF37D99B137BA98013278B117AB88AEA2A20E6 |
+| %.wiley.com               | di               | *0CAF37D99B137BA98013278B117AB88AEA2A20E6 |
+| 192.168.0.0/255.255.255.0 | di               | *0CAF37D99B137BA98013278B117AB88AEA2A20E6 |
++---------------------------+------------------+-------------------------------------------+
+6 rows in set (0.00 sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;　　从上表可以看出，刚刚创建的三个用户已经出现在表内，并且密码已被加密。注意以上命令中的 ‘authentication_string’，有些书本中是 ‘password’，这是过时的用法，在 MySQL 5.7 中 user 表的 password 已被替换为 authentication_string 。&lt;/p&gt;</content><author><name></name></author><summary type="html">　　本文将创建三种不同的用户，并且以三种不同的方式进行连接： 　　 从本地机器连接 从IP地址在192.168.0.0 ~ 192.168.0.255范围内的任何机器连接 从wiley.com域中的任何机器连接</summary></entry><entry><title type="html">Ubuntu Install Mysql</title><link href="http://localhost:4000/2017/06/28/Ubuntu-Install-MySql.html" rel="alternate" type="text/html" title="Ubuntu Install Mysql" /><published>2017-06-28T00:00:00+08:00</published><updated>2017-06-28T00:00:00+08:00</updated><id>http://localhost:4000/2017/06/28/Ubuntu-Install-MySql</id><content type="html" xml:base="http://localhost:4000/2017/06/28/Ubuntu-Install-MySql.html">&lt;p&gt;       在终端输入代码，如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 下载安装MySQL服务
+$ sudo apt-get install mysql-server
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;       下载安装时会出现要求设置密码的界面，如图一所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170630130737917?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;MySQL安装&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图一：安装时出现的界面&lt;/p&gt;
+
+&lt;p&gt;       一般建议设置密码后再按Enter确认，如果直接Enter确认进入，则默认root用户的密码为空：
+&lt;img src=&quot;http://img.blog.csdn.net/20170630130946606?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;安装结束&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图二：安装服务结束&lt;/p&gt;
+
+&lt;p&gt;       接下来继续输入：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 下载安装MySQL客户端
+$ sudo apt-get isntall mysql-client
+# 下载安装MySQL开发接口
+$ sudo apt-get install libmysqlclient-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;       待安装完成后可运行以下代码检查是否成功安装MySQL：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo netstat -tap|grep mysql
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;       若成功安装，则应当显示如下，MySQL端口处于LISTEN状态：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170630131934617?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;成功安装&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图三：成功安装MySQL&lt;/p&gt;
+
+&lt;p&gt;       登陆MySQL的方法为：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sudo mysql -u root -p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;       终端上会要求你输入password，如果上一步设置了密码，就填那个；如果上一步直接Enter跳过，那么密码就为空，即Enter。切记，如果没有设置密码，则必须以管理员身份运行，即前面加上 sudo，否则会出现 ERROR 1698 的情况，如图五所示。
+       下图为登陆成功的界面：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170630143251777?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;登陆成功&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图四：登陆成功&lt;/p&gt;
+
+&lt;p&gt;       登陆失败：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170630144136379?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;登陆失败&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图五：没有设置密码，并且没有以 sudo 运行导致登陆失败&lt;/p&gt;</content><author><name></name></author><summary type="html">       在终端输入代码，如下：</summary></entry><entry><title type="html">Ubuntu Windows双系统导致windows系统时间异常的解决方法</title><link href="http://localhost:4000/2017/06/25/Ubuntu-Windows%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%87%B4Windows%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E5%BC%82%E5%B8%B8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" rel="alternate" type="text/html" title="Ubuntu Windows双系统导致windows系统时间异常的解决方法" /><published>2017-06-25T00:00:00+08:00</published><updated>2017-06-25T00:00:00+08:00</updated><id>http://localhost:4000/2017/06/25/Ubuntu-Windows%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%87%B4Windows%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E5%BC%82%E5%B8%B8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95</id><content type="html" xml:base="http://localhost:4000/2017/06/25/Ubuntu-Windows%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%AF%BC%E8%87%B4Windows%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E5%BC%82%E5%B8%B8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html">&lt;p&gt;       在安装Ubuntu后，重启选择Windows 10系统，突然发现系统时间比实际时间慢了八个小时。当时我乐了，难不成这系统傻了定位识别我还在英国？检查设置后确认时区设置是东八区没问题，联网更新时间后恢复了正常。但之后的几天每当我先打开Ubuntu再打开Windows就会发现时间依然不对，上网查询后发现原来是由于两个系统对时间的识别方式不同造成的。&lt;/p&gt;
+
+&lt;p&gt;       Ubuntu 默认硬件时间为UTC（Coordinated Universal Time）即协调世界时，中国时间为UTC+8；而Windows则认定硬件时间为系统时间。这就造成了当先开启Ubuntu系统时，系统从网络得到本地时间例如为8点钟，然后其修改硬件时间为0点，再次启用Windows时，Windows读取硬件时间为本地时间，这就造成了系统显示时间比实际时间慢8小时的问题。&lt;/p&gt;
+
+&lt;p&gt;       目前通用的解决方法有两种：一种是修改Ubuntu系统时间的读取方式，另一种是修改Windows系统时间的读取方式。在此推荐修改Ubuntu系统，因为修改方式极其简单。
+       在终端输入：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#安装时间校准服务
+$ sudo apt-get install ntpdate
+#从time.windows.com获取本地时间
+$ sudo ntpdate time.windows.com
+#同步时间到硬件
+$ sudo hwclock --localtime --systohc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;       运行结果如图一所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20170629142617247?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;修改Ubuntu系统时间的认定方式&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;图一：修改Ubuntu系统时间的认定方式&lt;/p&gt;</content><author><name></name></author><summary type="html">       在安装Ubuntu后，重启选择Windows 10系统，突然发现系统时间比实际时间慢了八个小时。当时我乐了，难不成这系统傻了定位识别我还在英国？检查设置后确认时区设置是东八区没问题，联网更新时间后恢复了正常。但之后的几天每当我先打开Ubuntu再打开Windows就会发现时间依然不对，上网查询后发现原来是由于两个系统对时间的识别方式不同造成的。</summary></entry></feed>

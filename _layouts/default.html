@@ -3,9 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <style>
+        body {
+          background-image: url('/assets/images/dog.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          }
+    </style>
   </head>
   <body>
     {% include navigation.html %}
-    {{ content }}
+    {{content}}
+    {% include footer.html %}
   </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>About</title>
+    <title>Opencv Puttext Function</title>
     <style>
         body {
           background-image: url('/assets/images/dog.jpg');
@@ -33,26 +33,60 @@
         </div>
     </nav>
 </nav>
-    <html>
-<head>
-<meta charset="utf-8">
-<title>About</title>
-
-<style>
-</style>
-</head>
-<body>
     <main class="page-content" aria-label="Content">
-        <div class="wrapper">     
-            <h1>HulkHaoke</h1>
-            <h4>Nanyang Technological University</h4>  
-            <h4>University of Liverpool</h4>
-            <h4>Xi'an Jiao Tong - Liverpool University </h4> 
-            <h4><a href="https://blog.csdn.net/Hulkhaoke/">[CSDN]</a></h4>
-        </div>
-    </main>
-</body>
-</html>
+    <div class="wrapper"> 
+        <h1>Opencv Puttext Function</h1>
+        <p>12 Jul 2017 - </p>
+        
+<p>       在Python中，putText函数常用于在图像上绘图。其原型为：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cv2.putText(img, text, org, fontFace, fontScale, color)
+
+#img – 想要打印上文字的图像
+#text – 想要打印的文字
+#org – 文字的左下角坐标
+#fontFace – 字体，可选的有：FONT_HERSHEY_SIMPLEX, 
+#		FONT_HERSHEY_PLAIN, FONT_HERSHEY_DUPLEX, 
+#		FONT_HERSHEY_COMPLEX, FONT_HERSHEY_TRIPLEX, 
+#		以及 FONT_HERSHEY_SCRIPT_COMPLEX, 其中任意一种字体
+#		都可加上 FONT_ITALIC 使其变为斜体
+#fontScale – 字号
+#color – 颜色
+</code></pre></div></div>
+
+<p>       下面是代码应用，具体代码将在文章最后展示。
+       用摄像头获取图像，并在图像上打印出 “Hello World！”。</p>
+
+<p><img src="http://img.blog.csdn.net/20170629175851485?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSHVsa2hhb2tl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="puText" /></p>
+
+<p>图一：在图片上打印 “Hello World！”</p>
+
+<p>Python代码：</p>
+
+<p>```</p>
+<h1 id="author-junkun-di">Author Junkun Di</h1>
+<h1 id="create-at-2962017">Create at: 29/6/2017</h1>
+<h1 id="description-get-an-image-by-using-the-webcamera-and-put-text-hello-world-in-the-image">Description: Get an image by using the webcamera and put text “Hello World” in the image</h1>
+
+<p>import cv2</p>
+
+<p>cap = cv2.VideoCapture(0)
+while(cap.isOpened()):
+    # read image
+    ret, img = cap.read()
+    # Display the text
+    cv2.putText(img, “Hello World!”, (50, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, 1)
+    # show appropriate images in windows
+    cv2.imshow(‘putText’, img)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = cv2.waitKey(10)
+if k == 27:
+    break
+</code></pre></div></div>
+
+    </div>
+</main>
+
     <link rel="stylesheet" href="/assets/css/styles.css">
 
 <footer class="site-footer h-card">
