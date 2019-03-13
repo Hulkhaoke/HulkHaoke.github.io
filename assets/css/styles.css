@@ -79,27 +79,32 @@
  /**
   * Links
   */
- a {
-   color: #ffffff;
-   text-decoration: none; }
-   a:visited {
-     color: #ff3c23;
-    text-decoration: none; }
-    .title {
-      color: #7f7dee98;
-      text-decoration: none; 
-    }
-    .username {
-      color: rgba(0, 0, 0, 0.8);
-      text-decoration: none; }
-   a:hover {
-     color: rgb(0, 0, 0);
-     text-decoration: underline; }
-   .social-media-list a:hover {
-     text-decoration: none; }
-     .social-media-list a:hover .username {
-      color: rgb(255, 255, 255);
-       text-decoration: none; }
+a {
+  color: #ffffff;
+  text-decoration: none; }
+a:visited {
+  color: #ff3c23;
+  text-decoration: none; }
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none; }
+     
+.username {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none; }
+
+.title {
+  color: #7f7dee98;
+  text-decoration: none; }
+.title a:hover .t{
+  color: #000000;
+  text-decoration: underline; }
+
+.social-media-list {
+  text-decoration: none; }
+.social-media-list a:hover .username {
+  color: rgb(255, 255, 255);
+  text-decoration: none; }
  
  /**
   * Blockquotes
