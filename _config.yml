@@ -1,4 +1,7 @@
-paginate: 2
+# Google Analytics
+google_analytics: UA-136144992-1
+
+paginate: 5
 
 plugins:
   - jekyll-paginate
