@@ -13,8 +13,8 @@ title: Archive
             <h1>Latest Posts</h1>
             {% for post in site.posts %}
               <li>
-                <h3><a class="title" href="{{ post.url }}">{{ post.title }}</a></h3>
-                <p>{{ post.excerpt }}</p>
+                <h4><a class="title" href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></h4>
+                <!--<p>{{ post.excerpt }}</p>-->
               </li>
             {% endfor %}
         </ul>
