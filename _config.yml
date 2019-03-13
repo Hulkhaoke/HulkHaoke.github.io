@@ -1,11 +1,15 @@
 # Google Analytics
 google_analytics: UA-136144992-1
 
+#visit_count(Powered by busuanzi on http://busuanzi.ibruce.info/)
+visit_count: true
+
 paginate: 5
 
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-octicons
 
 collections:
   authors:
