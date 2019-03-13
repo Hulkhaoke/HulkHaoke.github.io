@@ -1,3 +1,9 @@
+paginate: 2
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
 collections:
   authors:
     output: true
