@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-03-13T23:51:31+08:00</updated><id>/feed.xml</id><entry><title type="html">Opencv Puttext Function</title><link href="/2017/07/12/OpenCV-putText-Function.html" rel="alternate" type="text/html" title="Opencv Puttext Function" /><published>2017-07-12T00:00:00+08:00</published><updated>2017-07-12T00:00:00+08:00</updated><id>/2017/07/12/OpenCV-putText-Function</id><content type="html" xml:base="/2017/07/12/OpenCV-putText-Function.html">&lt;p&gt;       在Python中，putText函数常用于在图像上绘图。其原型为：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-03-13T23:54:09+08:00</updated><id>/feed.xml</id><entry><title type="html">Opencv Puttext Function</title><link href="/2017/07/12/OpenCV-putText-Function.html" rel="alternate" type="text/html" title="Opencv Puttext Function" /><published>2017-07-12T00:00:00+08:00</published><updated>2017-07-12T00:00:00+08:00</updated><id>/2017/07/12/OpenCV-putText-Function</id><content type="html" xml:base="/2017/07/12/OpenCV-putText-Function.html">&lt;p&gt;       在Python中，putText函数常用于在图像上绘图。其原型为：&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cv2.putText(img, text, org, fontFace, fontScale, color)
 
@@ -23,12 +23,8 @@
 
 &lt;p&gt;Python代码：&lt;/p&gt;
 
-&lt;p&gt;```&lt;/p&gt;
-&lt;h1 id=&quot;author-junkun-di&quot;&gt;Author Junkun Di&lt;/h1&gt;
-&lt;h1 id=&quot;create-at-2962017&quot;&gt;Create at: 29/6/2017&lt;/h1&gt;
-&lt;h1 id=&quot;description-get-an-image-by-using-the-webcamera-and-put-text-hello-world-in-the-image&quot;&gt;Description: Get an image by using the webcamera and put text “Hello World” in the image&lt;/h1&gt;
-
-&lt;p&gt;import cv2&lt;/p&gt;
+&lt;p&gt;```
+import cv2&lt;/p&gt;
 
 &lt;p&gt;cap = cv2.VideoCapture(0)
 while(cap.isOpened()):

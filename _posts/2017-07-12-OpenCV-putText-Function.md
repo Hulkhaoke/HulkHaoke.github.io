@@ -26,10 +26,6 @@ cv2.putText(img, text, org, fontFace, fontScale, color)
 Python代码：
 
 ```
-# Author Junkun Di
-# Create at: 29/6/2017
-# Description: Get an image by using the webcamera and put text "Hello World" in the image
-
 import cv2
 
 cap = cv2.VideoCapture(0)
