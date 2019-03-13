@@ -80,21 +80,20 @@
 
 <p>Python代码：</p>
 
-<p>```
-import cv2</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import cv2
 
-<p>cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 while(cap.isOpened()):
     # read image
     ret, img = cap.read()
     # Display the text
-    cv2.putText(img, “Hello World!”, (50, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, 1)
+    cv2.putText(img, "Hello World!", (50, 150), cv2.FONT_HERSHEY_SIMPLEX, 3, 1)
     # show appropriate images in windows
-    cv2.imshow(‘putText’, img)</p>
+    cv2.imshow('putText', img)
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>k = cv2.waitKey(10)
-if k == 27:
-    break
+    k = cv2.waitKey(10)
+    if k == 27:
+        break
 </code></pre></div></div>
 
     </div>
